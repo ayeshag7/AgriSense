@@ -1,17 +1,38 @@
-# AgriSense  
-AI-Powered Precision Agriculture Ecosystem  
+# AgriSense: An AI Powered Platform for Image-Based Crop Health Monitoring and Yield Estimation
 
-AgriSense is an advanced precision agriculture ecosystem developed as part of a Final Year Project at Namal University. This project leverages autonomous drones, IoT sensors, and AI technologies to promote sustainable farming practices by enhancing productivity, optimizing resource usage, and providing actionable insights to farmers.  
+AgriSense is an AI-powered web platform developed as a Final Year Project at Namal University. It empowers farmers with actionable insights by leveraging deep learning, computer vision, and cloud technologies to automate crop diagnosis and yield estimation from images.
 
-## Features  
-- **Crop Health Monitoring:** Real-time detection of crop health issues using object detection models (YOLOv10, Faster R-CNN).  
-- **Irrigation Optimization:** Reducing water wastage with IoT-driven monitoring and analysis.  
-- **Yield Estimation:** Predicting crop yields with machine learning models.  
-- **Edge Computing:** Real-time data processing using Raspberry Pi and drone integration.  
-- **Cloud Infrastructure:** Secure data storage and management with Google Cloud IoT Core.  
+🔗 **Web Platform:** [AgriSense Platform](https://github.com/ayeshag7/AgriSense-Platform)
 
-## Project Structure  
-- `src/` - Core codebase, including model training scripts and data processing pipelines.  
-- `hardware/` - Configuration and integration details for IoT sensors and drones.  
-- `datasets/` - Sample datasets used for model training and testing.  
-- `docs/` - Technical documentation and project resources. 
+---
+
+## Key Features
+
+- **Crop Type Detection**  
+  Automatically predict the type of crop (e.g., wheat, maize, rice) from uploaded images to enable context-aware analysis.
+
+- **Disease Diagnosis**  
+  Diagnose crop diseases using image-based detection models. Outputs include disease name, confidence score, severity level, and treatment recommendations.
+
+- **Yield Estimation**  
+  Estimate crop yield from field images using object detection to count yield-relevant structures (e.g., wheat heads), including optional image stitching for wider field coverage.
+
+- **Health Timeline Tracking**  
+  Track changes in crop health across time by grouping multiple images under a field ID. Compare improvements post-treatment using severity scores and overlays.
+
+- **Smart Report Generation**  
+  Generate PDF or web-based reports summarizing diagnosis results, severity, treatment notes, and timeline progression with optional QR linking.
+
+- **Interactive Dashboard & Analytics**  
+  View diagnosis history, visualize disease trends, and explore health analytics such as infection percentages, common diseases, and time-based patterns.
+
+- **AI Chatbot Assistant**  
+  Integrated chatbot to guide users, answer agriculture-related questions, and support decision-making using model insights.
+
+---
+
+## Project Structure
+* `src/` → Source code for models, diagnosis engine, web and mobile app
+* `datasets/` → Sample images and annotations for training/testing
+* `docs/` → Reports, design documents, and references
+
